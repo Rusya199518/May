@@ -1,0 +1,129 @@
+/* Обнуляем стандартные отступы и размеры */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Стили для контейнера */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Основные стили для секций */
+.section-title {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Стили для блока загрузки видео */
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#video-file {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #ff2d55;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4d6b;
+}
+
+/* Стили для видеопотока */
+.video-feed {
+    padding: 40px 0;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.video-item {
+    animation: fadeIn 1s ease-out;
+}
