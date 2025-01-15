@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Развлекательный сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="site-title">Мой развлекательный сайт</h1>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h2 class="section-title">Загрузите ваше видео</h2>
+            <div class="upload-container">
+                <input type="file" id="video-file" accept="video/*">
+                <button class="btn" onclick="uploadVideo()">Загрузить видео</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-feed">
+        <div class="container">
+            <h2 class="section-title">Популярные видео</h2>
+            <div class="videos" id="video-feed">
+                <!-- Видео будет добавляться сюда -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Развлекательный сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
